@@ -1,0 +1,973 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-principal: #00414D;
+    --cor-subtitulo: #067F96;
+    --cor-card: #F6F6F6;
+    --cor-cinza: #B8B8B8;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    border: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #0B7285 0%, #85B8C2 35%, #FFFFFF 100%);
+}
+
+/* FUNDO CARD */
+.card-curriculo {
+    width: 100%;
+    max-width: 1209px;
+    height: 2679px;
+    border-radius: 25px;
+    background: #fff;
+}
+
+.container-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+/* FIM FUNDO CARD */
+
+/* HEADER */
+header {
+    width: 100%;
+    max-width: 1211px;
+    height: 275px;
+    border-radius: 25px 25px 0 0;
+    background: #0B7285;
+}
+
+.container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0.2rem;
+}
+
+.container-content-header {
+    margin-left: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.container-content-header h1 {
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.container-content-header p {
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #C9C7C7;
+}
+
+.container-btn-header {
+    width: 767px;
+    height: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+#btn-email,
+#btn-github,
+#btn-linkedin,
+#btn-telefone,
+#btn-local {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23px;
+    border-radius: 13.5px;
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--cor-cinza);
+    font-size: 0.75rem;
+    font-weight: 700;
+    transition: transform .3s ease-in-out;
+}
+
+#btn-email:hover,
+#btn-github:hover,
+#btn-linkedin:hover,
+#btn-telefone:hover,
+#btn-local:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.212);
+}
+
+#btn-email img,
+#btn-github img,
+#btn-linkedin img,
+#btn-telefone img,
+#btn-local img {
+    padding-right: 0.813rem;
+}
+
+#btn-email {
+    width: 272px;
+}
+
+#btn-github {
+    width: 172px;
+}
+
+#btn-linkedin {
+    width: 272px;
+}
+
+#btn-telefone {
+    width: 153px;
+}
+
+#btn-local {
+    width: 184px;
+}
+
+/* FIM HEADER */
+
+main {
+    padding: 91px 85px 104px 85px;
+    display: flex;
+}
+
+.lado-direito {
+    margin-left: 200px;
+}
+
+.circle {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 65, 77, 0.15);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 1.125rem;
+    margin-top: 60px;
+}
+
+.linha {
+    width: 55px;
+    height: 3px;
+    background-color: var(--cor-principal);
+    margin-top: 5px;
+}
+
+#container-resumo h2,
+#container-formacao h2,
+#container-experiencia h2,
+#container-tecnologias h2,
+#container-idiomas h2,
+#container-certificacoes h2,
+#container-habilidades h2 {
+    font-family: Montserrat;
+    font-size: 1.875rem;
+    color: var(--cor-principal);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#container-resumo p {
+    width: 376px;
+    font-family: Montserrat;
+    font-size: 1rem;
+    color: var(--cor-principal);
+    font-weight: 700;
+    text-align: justify;
+    margin-top: 14px;
+    padding-left: 52px;
+}
+
+#textos-formacao {
+    margin-top: 14px;
+    padding-left: 52px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+#textos-formacao .ano {
+    font-family: Montserrat;
+    color: var(--cor-subtitulo);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#textos-formacao .formacao {
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    color: var(--cor-principal);
+    font-weight: 700;
+}
+
+#textos-formacao .instituicao {
+    font-family: Montserrat;
+    font-size: 0.75;
+    color: #818181;
+    font-weight: 700;
+}
+
+#container-experiencia h3 {
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    color: var(--cor-subtitulo);
+    font-weight: 800;
+    padding-left: 52px;
+}
+
+#container-experiencia .projetos {
+    margin-top: 14px;
+}
+
+#container-experiencia .estudos {
+    margin-top: 60px;
+}
+
+#neurazen,
+#skoob,
+#ifood,
+#fullstack {
+    width: 100%;
+    max-width: 470px;
+    height: 315px;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    box-shadow: 4px 4px 25px 0 rgba(0, 0, 0, 0.15), -7px 0 0 #00414D;
+    position: relative;
+    top: 30px;
+    left: 55px;
+    transition: box-shadow .3s ease-out;
+}
+
+#neurazen:hover,
+#skoob:hover,
+#ifood:hover,
+#fullstack:hover {
+    box-shadow: 20px 20px 35px 0 rgba(0, 0, 0, 0.15), -7px 0 0 #00414D;
+}
+
+#skoob {
+    height: 235px;
+    margin-top: 30px;
+}
+
+#ifood {
+    height: 300px;
+    margin-top: 30px;
+}
+
+#fullstack {
+    margin-top: 30px;
+    top: 0;
+    height: 175px;
+}
+
+#neurazen h2,
+#skoob h2,
+#ifood h2,
+#fullstack h2 {
+    font-family: Poppins;
+    font-size: 1rem;
+    color: #067F96;
+    font-weight: 800;
+    position: relative;
+}
+
+#neurazen .texto-neurazen,
+#skoob .texto-skoob,
+#ifood .texto-ifood,
+#fullstack .texto-fullstack {
+    padding: 20px 18px;
+}
+
+#neurazen .texto-neurazen .local,
+#skoob .texto-skoob .local,
+#ifood .texto-ifood .local,
+#fullstack .texto-fullstack .local {
+    font-family: Poppins;
+    font-size: 0.938rem;
+    color: var(--cor-cinza);
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+#neurazen .texto-neurazen p,
+#skoob .texto-skoob p,
+#ifood .texto-ifood p,
+#fullstack .texto-fullstack p {
+    font-family: Montserrat;
+    font-size: 1rem;
+    color: #006173;
+    font-weight: 500;
+    text-align: justify;
+    width: 430px;
+    margin-top: 20px;
+}
+
+#neurazen .texto-neurazen button,
+#skoob .texto-skoob button,
+#ifood .texto-ifood button {
+    width: 98px;
+    height: 30px;
+    border-radius: 17px;
+    border: 2px solid #067F96;
+    background-color: transparent;
+    margin: 14px 0;
+    font-family: Poppins;
+    font-size: 0.813rem;
+    color: #067F96;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#ifood .texto-ifood .btn-repositorio {
+    width: 122px;
+    margin-left: 13px;
+    background-color: #067F96;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* TECNOLOGIAS */
+.tecnologias {
+    margin-top: 14px;
+    font-family: Montserrat;
+    color: var(--cor-principal);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-left: 53px;
+    width: 230px;
+}
+
+.html,
+.css,
+.js,
+.java,
+.sass,
+.react,
+.spring,
+.tailw {
+    border-radius: 11.5px;
+    background: rgba(0, 65, 77, 0.15);
+    display: inline-block;
+    margin: 18px 0;
+    transition: transform .3s ease-in-out;
+}
+
+.html:hover,
+.css:hover,
+.js:hover,
+.java:hover,
+.sass:hover,
+.react:hover,
+.spring:hover,
+.tailw:hover {
+    transform: translateY(-4px);
+    background: #00414d49;
+}
+
+.html,
+.java {
+    width: 51px;
+    height: 25px;
+    padding: 0 7px 3px 8px;
+}
+
+.css {
+    width: 39px;
+    height: 25px;
+    padding: 0 7px 8px 7px;
+    margin: 0 11px;
+}
+
+.js {
+    width: 91px;
+    height: 25px;
+    padding: 0 6px 3px 7px;
+    margin-right: 11px;
+}
+
+.sass {
+    width: 48px;
+    height: 25px;
+    padding: 0 5px 3px 7px;
+    margin: 0 11px;
+}
+
+.react {
+    width: 57px;
+    height: 25px;
+    padding: 0 7px 4px 7px;
+}
+
+.spring {
+    width: 105px;
+    height: 25px;
+    padding: 0 8px 4px 8px;
+    margin-right: 11px;
+}
+
+.tailw {
+    width: 77px;
+    height: 25px;
+    padding: 0 5px 4px 6px;
+}
+
+/* FIM TECNOLOGIAS */
+
+/* IDIOMAS */
+
+.idiomas {
+    margin-top: 14px;
+    margin-left: 53px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.idiomas span {
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    color: var(--cor-principal);
+    font-weight: 700;
+}
+
+.linha-pt {
+    width: 201px;
+    height: 6px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #00414D 0%, #0097B3 63.18%);
+}
+
+.fundo-en {
+    width: 201px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #E9E9E9;
+}
+
+.fundo-en .linha-en {
+    width: 42px;
+    height: 6px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #00414D 0%, #0097B3 63.18%);
+}
+
+#lista-certificacoes {
+    margin-top: 14px;
+    list-style-position: inside;
+    padding-left: 53px;
+    width: 300px;
+}
+
+#lista-certificacoes li {
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    color: #00414D;
+    font-weight: 700;
+}
+
+#lista-habilidades {
+    margin-top: 14px;
+    list-style-position: inside;
+    padding-left: 53px;
+}
+
+#lista-habilidades li {
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    color: #00414D;
+    font-weight: 700;
+}
+
+@media (max-width: 430px) {
+
+    body {
+        background: #FFF;
+    }
+
+    .container-card {
+        padding: 0;
+    }
+
+    /* HEADER */
+    header {
+        width: 430px;
+        height: 250px;
+        background: #0B7285;
+        border-radius: 0;
+        margin-top: 0;
+    }
+
+    .container-header #minha-foto {
+        width: 110px;
+        height: 110px;
+        position: relative;
+        top: 20px;
+    }
+
+    .container-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-left: 28.7rem;
+    }
+
+    .container-content-header {
+        position: relative;
+        top: 5px;
+        margin-left: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container-content-header h1 {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 900;
+        color: #fff;
+    }
+
+    .container-content-header p {
+        font-family: Montserrat;
+        font-size: 8px;
+        font-weight: 700;
+        color: #C9C7C7;
+    }
+
+    .container-btn-header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 8px;
+    }
+    
+    .container-btn-header button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #btn-email,
+    #btn-github,
+    #btn-linkedin,
+    #btn-telefone,
+    #btn-local {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 16px;
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 13.5px;
+        color: var(--cor-cinza);
+        font-size: 8px;
+        font-weight: 700;
+    }
+
+    #btn-email img,
+    #btn-github img,
+    #btn-linkedin img,
+    #btn-telefone img,
+    #btn-local img {
+        width: 24px;
+        height: 24px;
+    }
+
+    #btn-email {
+        width: 195px;
+    }
+
+    #btn-github {
+        width: 130px;
+    }
+
+    #btn-linkedin {
+        width: 195px;
+    }
+
+    #btn-telefone {
+        width: 125px;
+    }
+
+    #btn-local {
+        width: 140px;
+    }
+
+    /* FIM HEADER */
+
+    main {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .lado-direito {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .circle img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .circle {
+        width: 28px;
+        height: 28px;
+        background-color: rgba(0, 65, 77, 0.15);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .titulo {
+        display: flex;
+        align-items: center;
+        gap: 0.60rem;
+        margin-top: 60px;
+    }
+
+    .linha {
+        width: 40px;
+        height: 3px;
+        background-color: var(--cor-principal);
+        margin-top: 5px;
+    }
+
+    #container-resumo h2,
+    #container-formacao h2,
+    #container-experiencia h2,
+    #container-tecnologias h2,
+    #container-idiomas h2,
+    #container-certificacoes h2,
+    #container-habilidades h2 {
+        font-family: Montserrat;
+        font-size: 1.45rem;
+        color: var(--cor-principal);
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    #container-resumo p {
+        width: 352px;
+        font-family: Montserrat;
+        font-size: 0.98rem;
+        color: var(--cor-principal);
+        font-weight: 700;
+        text-align: justify;
+        margin-top: 14px;
+        padding-left: 38px;
+    }
+
+    #textos-formacao {
+        margin-top: 14px;
+        padding-left: 38px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    #textos-formacao .ano {
+        font-family: Montserrat;
+        color: var(--cor-subtitulo);
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    #textos-formacao .formacao {
+        font-family: Montserrat;
+        font-size: 0.875rem;
+        color: var(--cor-principal);
+        font-weight: 700;
+    }
+
+    #textos-formacao .instituicao {
+        font-family: Montserrat;
+        font-size: 0.75;
+        color: #818181;
+        font-weight: 700;
+    }
+
+    #container-experiencia h3 {
+        font-family: Montserrat;
+        font-size: 1.125rem;
+        color: var(--cor-subtitulo);
+        font-weight: 800;
+        padding-left: 38px;
+    }
+
+    #container-experiencia .projetos {
+        margin-top: 14px;
+    }
+
+    #container-experiencia .estudos {
+        margin-top: 60px;
+    }
+
+    #neurazen,
+    #skoob,
+    #ifood,
+    #fullstack {
+        width: 100%;
+        max-width: 310px;
+        height: 420px;
+        background-color: #F6F6F6;
+        border-radius: 10px;
+        box-shadow: 4px 4px 25px 0 rgba(0, 0, 0, 0.15), -7px 0 0 #00414D;
+        position: relative;
+        top: 30px;
+        left: 44px;
+    }
+
+    #skoob {
+        height: 305px;
+        margin-top: 30px;
+    }
+
+    #ifood {
+        height: 360px;
+        margin-top: 30px;
+    }
+
+    #fullstack {
+        margin-top: 30px;
+        top: 0;
+        height: 200px;
+    }
+
+    #neurazen h2,
+    #skoob h2,
+    #ifood h2,
+    #fullstack h2 {
+        font-family: Poppins;
+        font-size: 0.85rem;
+        color: #067F96;
+        font-weight: 800;
+        position: relative;
+    }
+
+    #neurazen .texto-neurazen,
+    #skoob .texto-skoob,
+    #ifood .texto-ifood,
+    #fullstack .texto-fullstack {
+        padding: 20px 18px;
+    }
+
+    #neurazen .texto-neurazen .local,
+    #skoob .texto-skoob .local,
+    #ifood .texto-ifood .local,
+    #fullstack .texto-fullstack .local {
+        font-family: Poppins;
+        font-size: 0.78rem;
+        color: var(--cor-cinza);
+        font-weight: 700;
+        margin-top: 4px;
+    }
+
+    #neurazen .texto-neurazen p,
+    #skoob .texto-skoob p,
+    #ifood .texto-ifood p,
+    #fullstack .texto-fullstack p {
+        font-family: Montserrat;
+        font-size: 1rem;
+        color: #006173;
+        font-weight: 500;
+        text-align: justify;
+        width: 270px;
+        margin-top: 20px;
+    }
+
+    #neurazen .texto-neurazen button,
+    #skoob .texto-skoob button,
+    #ifood .texto-ifood button {
+        width: 98px;
+        height: 30px;
+        border-radius: 17px;
+        border: 2px solid #067F96;
+        background-color: transparent;
+        margin: 14px 0;
+        font-family: Poppins;
+        font-size: 0.813rem;
+        color: #067F96;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    #ifood .texto-ifood .btn-repositorio {
+        width: 122px;
+        margin-left: 13px;
+        background-color: #067F96;
+        color: #fff;
+        cursor: pointer;
+    }
+
+
+    /* TECNOLOGIAS */
+    .tecnologias {
+        margin-top: 14px;
+        font-family: Montserrat;
+        color: var(--cor-principal);
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 25px;
+        margin-left: 38px;
+        width: 230px;
+    }
+
+    .html,
+    .css,
+    .js,
+    .java,
+    .sass,
+    .react,
+    .spring,
+    .tailw {
+        border-radius: 11.5px;
+        background: rgba(0, 65, 77, 0.15);
+        display: inline-block;
+        margin: 18px 0;
+    }
+
+    .html,
+    .java {
+        width: 51px;
+        height: 25px;
+        padding: 0 7px 3px 8px;
+    }
+
+    .css {
+        width: 39px;
+        height: 25px;
+        padding: 0 7px 8px 7px;
+        margin: 0 11px;
+    }
+
+    .js {
+        width: 91px;
+        height: 25px;
+        padding: 0 6px 3px 7px;
+        margin-right: 11px;
+    }
+
+    .sass {
+        width: 48px;
+        height: 25px;
+        padding: 0 5px 3px 7px;
+        margin: 0 11px;
+    }
+
+    .react {
+        width: 57px;
+        height: 25px;
+        padding: 0 7px 4px 7px;
+    }
+
+    .spring {
+        width: 105px;
+        height: 25px;
+        padding: 0 8px 4px 8px;
+        margin-right: 11px;
+    }
+
+    .tailw {
+        width: 77px;
+        height: 25px;
+        padding: 0 5px 4px 6px;
+    }
+
+    /* FIM TECNOLOGIAS */
+
+    /* IDIOMAS */
+
+    .idiomas {
+        margin-top: 14px;
+        margin-left: 38px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .idiomas span {
+        font-family: Montserrat;
+        font-size: 1.125rem;
+        color: var(--cor-principal);
+        font-weight: 700;
+    }
+
+    .linha-pt {
+        width: 201px;
+        height: 6px;
+        border-radius: 6px;
+        background: linear-gradient(90deg, #00414D 0%, #0097B3 63.18%);
+    }
+
+    .fundo-en {
+        width: 201px;
+        height: 6px;
+        border-radius: 6px;
+        background-color: #E9E9E9;
+    }
+
+    .fundo-en .linha-en {
+        width: 42px;
+        height: 6px;
+        border-radius: 6px;
+        background: linear-gradient(90deg, #00414D 0%, #0097B3 63.18%);
+    }
+
+    #lista-certificacoes {
+        margin-top: 14px;
+        list-style-position: inside;
+        padding-left: 38px;
+        width: 300px;
+    }
+
+    #lista-certificacoes li {
+        text-align: left;
+        font-family: Montserrat;
+        font-size: 1.125rem;
+        color: #00414D;
+        font-weight: 700;
+    }
+
+    #lista-habilidades {
+        margin-top: 14px;
+        list-style-position: inside;
+        padding-left: 53px;
+        margin-bottom: 100px;
+    }
+
+    #lista-habilidades li {
+        text-align: left;
+        font-family: Montserrat;
+        font-size: 1.125rem;
+        color: #00414D;
+        font-weight: 700;
+    }
+}
