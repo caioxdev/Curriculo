@@ -504,7 +504,7 @@ main {
     font-weight: 700;
 }
 
-@media (max-width: 430px) {
+@media screen and (max-width: 1000px) {
 
     body {
         background: #FFF;
