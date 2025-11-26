@@ -339,6 +339,15 @@ main {
     color: #067F96;
     font-weight: 700;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#neurazen .texto-neurazen button:hover,
+#skoob .texto-skoob button:hover,
+#ifood .texto-ifood button:hover {
+    color: #fff;
+    background-color: #067F96;
+    box-shadow: 2px 2px 22px 2px #067F96;
 }
 
 #ifood .texto-ifood .btn-repositorio {
@@ -347,6 +356,13 @@ main {
     background-color: #067F96;
     color: #fff;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#ifood .texto-ifood .btn-repositorio:hover {
+    color: #067F96;
+    border: 2px solid #067F96;
+    background-color: transparent;
 }
 
 /* TECNOLOGIAS */
