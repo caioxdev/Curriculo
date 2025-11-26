@@ -21,6 +21,16 @@ body {
     background: linear-gradient(135deg, #0B7285 0%, #85B8C2 35%, #FFFFFF 100%);
 }
 
+main {
+    padding: 91px 85px 104px 85px;
+    display: flex;
+}
+
+.lado-direito {
+    margin-left: 200px;
+}
+
+
 /* FUNDO CARD */
 .card-curriculo {
     width: 100%;
@@ -139,15 +149,6 @@ header {
 }
 
 /* FIM HEADER */
-
-main {
-    padding: 91px 85px 104px 85px;
-    display: flex;
-}
-
-.lado-direito {
-    margin-left: 200px;
-}
 
 .circle {
     width: 35px;
@@ -522,6 +523,16 @@ main {
 
 @media screen and (max-width: 1000px) {
 
+    main {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .lado-direito {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
     body {
         background: #FFF;
     }
@@ -633,18 +644,7 @@ main {
     #btn-local {
         width: 140px;
     }
-
     /* FIM HEADER */
-
-    main {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .lado-direito {
-        margin-left: 0;
-        margin-top: 40px;
-    }
 
     .circle img {
         width: 15px;
